@@ -1,0 +1,36 @@
+import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
+function Header() {
+  return (
+    <div>
+       <Navbar className="bg-taransparent">
+        <Container>
+          <Navbar.Brand href="#home">
+            
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+              width="120"
+              height="40"
+              className="d-inline-block align-top "
+              alt="React Bootstrap logo"
+            />
+            
+          </Navbar.Brand>
+          <Nav className="me-auto gap-4 " >
+            <Nav.Link className='text-white '  href="#home">Home</Nav.Link>
+            <Nav.Link className='text-white'  href="#features">TV shows</Nav.Link>
+            <Nav.Link className='text-white' href="#pricing">Movies</Nav.Link>
+            <Nav.Link className='text-white' href="#pricing">News & Popular</Nav.Link>
+            <Nav.Link className='text-white' href="#pricing">My list</Nav.Link>
+          </Nav>
+          
+        </Container>
+      </Navbar>
+    </div>
+  )
+}
+
+export default Header
